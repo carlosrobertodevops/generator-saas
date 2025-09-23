@@ -2,7 +2,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaCode } from "react-icons/fa";
 import { useAppContext } from "@/src/app/AppContext";
 import { IoClose } from "react-icons/io5";
-import TemplateDropDown from "@/src/DropDowns/TemplateDropDown";
+import TemplateDropDown from "@/src/componentes/TemplateDropDown";
 import { useState } from "react";
 import { RiArrowDropUpLine } from "react-icons/ri";
 export default function TemplatesHeader() {

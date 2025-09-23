@@ -61,10 +61,7 @@ function DaysDropDown({
       ref={dropDownRef}
       className={`  ${
         isDarkMode ? "bg-slate-700" : "bg-white border border-slate-50 "
-      }    absolute p-3 top-7 right-1
-          z-[90]   w-[180px]   
-       select-none shadow-md rounded-lg flex 
-      flex-col gap-2`}
+      }    absolute p-3 top-7 right-1 z-[90]   w-[180px] select-none shadow-md rounded-lg flex flex-col gap-2`}
     >
       {daysDropDown.map((item, index) => (
         <SingleItem

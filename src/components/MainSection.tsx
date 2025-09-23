@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { useAppContext } from "@/src/app/AppContext";
 
 // MainSection component
-function MainSection() {
+export function MainSection() {
   // Destructuring mainMenuItems and setMainMenuItems from the mainMenuItemsObject in the AppContext
   const {
     mainMenuItemsObject: { mainMenuItems, setMainMenuItems },
@@ -71,4 +71,4 @@ function MainSection() {
 }
 
 // Exporting the MainSection component
-export default MainSection;
+// export default MainSection;

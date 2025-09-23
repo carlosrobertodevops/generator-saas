@@ -14,6 +14,7 @@ import SingleHistoryItem, {
 import { HistoryData } from "@/src/types/AppType";
 import { convertFromTextToReactNode } from "../app/dashboard/ContentGenerator/LeftSection/LeftSection";
 import toast from "react-hot-toast";
+
 const AllHistoryList = () => {
   const {
     isDarkModeObject: { isDarkMode },
@@ -83,7 +84,7 @@ const AllHistoryList = () => {
         <div className="  text-slate-700 flex gap-3 items-center">
           <span className="text-[17px] font-bold">Recent History</span>
           <div
-            className="bg-purple-200 w-[24px] h-[24px] p-1 rounded-full 
+            className="bg-purple-200 w-[24px] h-[24px] p-1 rounded-full
           text-[12px] text-white flex items-center justify-center"
           >
             <span className="text-purple-600">{allHistoryData.length}</span>
@@ -165,8 +166,7 @@ function SingleItem({ singleHistory }: { singleHistory: HistoryData }) {
           {/* Icon */}
           {windowWidth >= 634 && (
             <div
-              className="  bg-purple-200 rounded-md p-[5px] flex 
-               items-center justify-center"
+              className="  bg-purple-200 rounded-md p-[5px] flex items-center justify-center"
             >
               {convertFromTextToReactNode(singleHistory.template)}
             </div>

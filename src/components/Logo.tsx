@@ -5,7 +5,7 @@ import { AiFillRobot } from "react-icons/ai";
 import { FiSidebar } from "react-icons/fi";
 
 // Logo component
-function Logo() {
+export function Logo() {
   const {
     isSideBarHiddenObject: { isSideBarHidden, setIsSideBarHidden },
     windowWidthObject: { windowWidth },
@@ -48,4 +48,4 @@ function Logo() {
   );
 }
 
-export default Logo;
+// export default Logo;

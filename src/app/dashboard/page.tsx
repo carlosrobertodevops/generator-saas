@@ -14,11 +14,6 @@ import { Toaster } from "react-hot-toast";
 import ConfirmationWindow from "../../Windows/DeleteConfirmationWindow";
 import SubscriptionPlans from "./subscription/SubscriptionPage";
 import PaymentWindow from "../../Windows/PayementWindow";
-import { useGlobals, useStorybookApi } from 'storybook/manager-api';
-import { IconButton } from 'storybook/internal/components';
-import { LightningIcon } from '@storybook/icons';
-
-import { ADDON_ID, PARAM_KEY, TOOL_ID } from './constants';
 
 export default function Page() {
   const {

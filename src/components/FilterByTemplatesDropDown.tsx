@@ -36,11 +36,11 @@ function FilterByTemplates({
 
   const containerClassName = `${
     isDarkMode ? "bg-slate-800" : "bg-white border border-slate-50"
-  } absolute p-3 top-12 right-0 z-[90]  w-[290px] select-none shadow-md rounded-lg flex 
+  } absolute p-3 top-12 right-0 z-[90]  w-[290px] select-none shadow-md rounded-lg flex
   flex-col gap-2`;
 
   const inputClassName = ` font-light text-slate-400
-  placeholder:text-slate-400 focus:outline-none px-1 text-[12px] w-full 
+  placeholder:text-slate-400 focus:outline-none px-1 text-[12px] w-full
   ${isDarkMode ? "bg-slate-600" : "bg-slate-50"}`;
 
   useClickOutside(dropDownRef, () => setOpenDropDown(false), openDropDown);

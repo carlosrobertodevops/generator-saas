@@ -1,21 +1,21 @@
-import type { Preview } from '@storybook/nextjs-vite'
+// .storybook/preview.tsx
+import type { Preview } from '@storybook/react';
+import React from 'react';
+
+// ajuste o import conforme seu AppContext exporta (Context ou Provider)
+import { AppContext } from '@/src/app/AppContext';
+
+const MockProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
+  const [isSideBarHidden, setIsSideBarHidden] = React.useState(false);
+  const value = {
+    isSideBarHiddenObject: { isSideBarHidden, setIsSideBarHidden },
+    windowWidthObject: { windowWidth: 1200 },
+  };
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+};
 
 const preview: Preview = {
-  parameters: {
-    controls: {
-      matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
-      },
-    },
-
-    a11y: {
-      // 'todo' - show a11y violations in the test UI only
-      // 'error' - fail CI on a11y violations
-      // 'off' - skip a11y checks entirely
-      test: 'todo'
-    }
-  },
+  decorators: [(Story) => <MockProvider><Story /></MockProvider>],
 };
 
 export default preview;

@@ -13,8 +13,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useAppContext } from "@/src/app/AppContext";
-import StatsDropDown from "@/src/DropDowns/StatsDropDown";
-import DaysDropDown from "@/src/DropDowns/DaysDropDown";
+import StatsDropDown from "@/src/components/StatsDropDown";
+import DaysDropDown from "@/src/components/DaysDropDown";
 import {
   formatAndAggregateAverageWords,
   formatAndAggregateTimeSaved,
@@ -44,7 +44,7 @@ const ChartContainer = () => {
         isDarkMode
           ? "bg-slate-800 text-white"
           : "bg-white border border-slate-50"
-      } mx-4 
+      } mx-4
     mt-6`}
     >
       <ChartHeader />
@@ -74,7 +74,7 @@ const ChartContainer = () => {
         <div className="flex gap-2 items-center  ">
           {/* Icon */}
           <div
-            className="  bg-purple-100 rounded-md p-[8px] flex 
+            className="  bg-purple-100 rounded-md p-[8px] flex
         items-center justify-center"
           >
             {getSelectedItem?.icon}
