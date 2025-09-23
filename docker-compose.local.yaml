@@ -1,5 +1,4 @@
 name: generator-saas-local
-
 services:
   web:
     image: node:22-alpine
