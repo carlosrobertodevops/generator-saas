@@ -34,7 +34,7 @@ import { RiReplay15Line } from "react-icons/ri";
 import { RiReplay30Line } from "react-icons/ri";
 
 import { templatesArray } from "./LocalData/templates";
-import { SingleTemplateExtended } from "../dashboard/Hisotry/AllHistory";
+import { SingleTemplateExtended } from "./dashboard/Hisotry/AllHistory";
 import { newHistoryData } from "./LocalData/mainData";
 
 import { templatesFilteringItemsArray } from "./LocalData/templateFilteringItems";

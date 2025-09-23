@@ -1,8 +1,8 @@
 import React from "react";
 
 import MainHeader from "../MainHeader";
-import TemplateSubHeader from "./Components/TemplatesSubHeader";
-import TemplateList from "./Components/TemplatesList";
+import TemplateSubHeader from "../../../components/TemplatesSubHeader";
+import TemplateList from "../../../components/TemplatesList";
 import { useAppContext } from "@/src/app/AppContext";
 
 function AllTemplatesPage() {

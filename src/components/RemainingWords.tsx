@@ -1,7 +1,7 @@
 "use client";
 import { useAppContext } from "@/src/app/AppContext";
 import React, { useEffect, useState } from "react";
-import { countWords } from "../../Hisotry/Components/SingleHistoryItem";
+import { countWords } from "./SingleHistoryItem";
 
 function RemainingWords() {
   const {

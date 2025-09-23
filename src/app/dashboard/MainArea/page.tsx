@@ -2,10 +2,10 @@
 import React from "react";
 import MainHeader from "../MainHeader";
 import { useAppContext } from "@/src/app/AppContext";
-import DashStats from "./Components/DashStats";
-import Chart from "./Components/Chart";
-import ChartContainer from "./Components/Chart";
-import AllHistoryList from "./Components/AllHistoryList";
+import DashStats from "../../../components/DashStats";
+import Chart from "../../../components/Chart";
+import ChartContainer from "../../../components/Chart";
+import AllHistoryList from "../../../components/AllHistoryList";
 
 function MainArea() {
   const {

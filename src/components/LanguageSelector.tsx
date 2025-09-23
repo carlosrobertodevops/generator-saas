@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useContentGeneratorForm } from "../LeftSectionContext";
+import { useContentGeneratorForm } from "../app/dashboard/ContentGenerator/LeftSection/LeftSectionContext";
 
 const LanguageSelector = () => {
   const {

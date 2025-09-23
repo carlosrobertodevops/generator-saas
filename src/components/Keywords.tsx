@@ -1,6 +1,6 @@
 import React, { useState, KeyboardEvent, ChangeEvent } from "react";
 import { IoClose } from "react-icons/io5";
-import { useContentGeneratorForm } from "../LeftSectionContext";
+import { useContentGeneratorForm } from "../app/dashboard/ContentGenerator/LeftSection/LeftSectionContext";
 
 function Keywords() {
   const {

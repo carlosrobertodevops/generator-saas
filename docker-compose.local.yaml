@@ -2,7 +2,7 @@ name: generator-saas-local
 services:
   web:
     image: node:22-alpine
-    working_dir: /app
+    working_dir: /src
     volumes:
       - ./:/app
       - /app/node_modules

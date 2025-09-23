@@ -4,10 +4,10 @@ import { MdModeEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
 import { useAppContext } from "@/src/app/AppContext";
-import { SingleTemplateExtended } from "../AllHistory";
+import { SingleTemplateExtended } from "../app/dashboard/Hisotry/AllHistory";
 import { HistoryData } from "@/src/types/AppType";
 import { FaRegCopy } from "react-icons/fa";
-import { convertFromTextToReactNode } from "../../ContentGenerator/LeftSection/LeftSection";
+import { convertFromTextToReactNode } from "../app/dashboard/ContentGenerator/LeftSection/LeftSection";
 import { loadManifestWithRetries } from "next/dist/server/load-components";
 import toast from "react-hot-toast";
 

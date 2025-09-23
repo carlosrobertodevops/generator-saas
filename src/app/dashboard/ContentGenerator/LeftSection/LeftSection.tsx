@@ -33,7 +33,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { RiQuestionAnswerLine } from 'react-icons/ri';
 import { BiHeading, BiMessageAltEdit } from 'react-icons/bi';
 import { BsTextParagraph } from 'react-icons/bs';
-import { countWords } from '../../Hisotry/Components/SingleHistoryItem';
+import { countWords } from '../../../../components/SingleHistoryItem';
 
 export default function LeftSection() {
   const {

@@ -1,8 +1,8 @@
 "use client";
 
 import React, { memo, useCallback, useEffect } from 'react';
-import { useAppContext } from "../app/AppContext";
-import StatsDropDown from "../DropDowns/StatsDropDown";
+import { useAppContext } from "../AppContext";
+import StatsDropDown from "../../components/StatsDropDown";
 import ContentGeneratorForm from "./ContentGenerator/ContentGenerator";
 import ContentGenerator from "./ContentGenerator/ContentGenerator";
 import AllHistory from "./Hisotry/AllHistory";
@@ -11,9 +11,9 @@ import SideBar from "./SideBar/SideBar";
 import FavoriteTemplates from "./FavoriteTemplates/FavoriteTemplates";
 import AllTemplatesPage from "./Templates/AllTemplatesPage.tsx";
 import { Toaster } from "react-hot-toast";
-import ConfirmationWindow from "../Windows/DeleteConfirmationWindow";
+import ConfirmationWindow from "../../Windows/DeleteConfirmationWindow";
 import SubscriptionPlans from "./subscription/SubscriptionPage";
-import PaymentWindow from "../Windows/PayementWindow";
+import PaymentWindow from "../../Windows/PayementWindow";
 import { useGlobals, useStorybookApi } from 'storybook/manager-api';
 import { IconButton } from 'storybook/internal/components';
 import { LightningIcon } from '@storybook/icons';

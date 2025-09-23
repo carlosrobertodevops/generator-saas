@@ -5,8 +5,8 @@ import Audience from './Audience';
 import TemplatesHeader from './TemplateHeader';
 import { useAppContext } from '@/src/app/AppContext';
 import { IoClose } from 'react-icons/io5';
-import Keywords from './OtherComponents/Keywords';
-import LanguageSelector from './OtherComponents/LanguageSelector';
+import Keywords from '../../../../components/Keywords';
+import LanguageSelector from '../../../../components/LanguageSelector';
 import { FormEvent, useContext, useEffect, useState } from 'react';
 import { createContext } from 'react';
 

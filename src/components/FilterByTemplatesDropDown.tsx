@@ -10,7 +10,7 @@ import useClickOutside from "../app/Hooks/useClickOutside";
 import {
   SingleTemplateExtended,
   useAllHistoryContext,
-} from "../dashboard/Hisotry/AllHistory";
+} from "../app/dashboard/Hisotry/AllHistory";
 
 //Defining the type of each element in the drop down
 type StatsDropDownItem = {

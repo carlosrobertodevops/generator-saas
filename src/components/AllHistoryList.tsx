@@ -10,9 +10,9 @@ import SingleHistoryItem, {
   countWords,
   formatIsoDate,
   truncateString,
-} from "../../Hisotry/Components/SingleHistoryItem";
+} from "./SingleHistoryItem";
 import { HistoryData } from "@/src/types/AppType";
-import { convertFromTextToReactNode } from "../../ContentGenerator/LeftSection/LeftSection";
+import { convertFromTextToReactNode } from "../app/dashboard/ContentGenerator/LeftSection/LeftSection";
 import toast from "react-hot-toast";
 const AllHistoryList = () => {
   const {

@@ -5,8 +5,8 @@ import { v4 as uuidv4 } from "uuid";
 import MainTopic from "./MainTopic";
 import ToneOrStyle from "./ToneOrStyle";
 import Audience from "./Audience";
-import LanguageSelector from "./OtherComponents/LanguageSelector";
-import Keywords from "./OtherComponents/Keywords";
+import LanguageSelector from "../../../../components/LanguageSelector";
+import Keywords from "../../../../components/Keywords";
 import { useAppContext } from "@/src/app/AppContext";
 import { Dispatch, SetStateAction } from "react";
 
