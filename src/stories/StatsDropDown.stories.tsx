@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import StatsDropDown from './StatsDropDown';
+import StatsDropDown from '../components/StatsDropDown';
 
 const meta: Meta<typeof StatsDropDown> = {
   title: 'Components/StatsDropDown',

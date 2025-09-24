@@ -1,18 +1,18 @@
-// .storybook/main.ts
 import type { StorybookConfig } from '@storybook/nextjs-vite';
-import tsconfigPaths from 'vite-tsconfig-paths';
 
 const config: StorybookConfig = {
   framework: '@storybook/nextjs-vite',
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mjs)'],
-  addons: ['@storybook/addon-docs'],
+  addons: [
+    '@storybook/addon-docs',
+    '@storybook/addon-themes',
+  ],
   core: { builder: '@storybook/builder-vite' },
   async viteFinal(viteConfig) {
     const { mergeConfig } = await import('vite');
+    const tsconfigPaths = (await import('vite-tsconfig-paths')).default;
     return mergeConfig(viteConfig, {
-      plugins: [tsconfigPaths()],
-      // ❌ retire isso se não usa o addon:
-      // optimizeDeps: { include: ['storybook-dark-mode'] },
+      plugins: [tsconfigPaths()]
     });
   },
 };

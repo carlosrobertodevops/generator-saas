@@ -1,4 +1,4 @@
-import { useAppContext } from "@/src/app/AppContext";
+import { useAppContext } from '@/app/AppContext';
 
 import { useEffect, useRef } from "react";
 import { useContentGeneratorForm } from "./LeftSectionContext";

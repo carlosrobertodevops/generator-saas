@@ -1,5 +1,5 @@
-import { useAppContext } from '@/src/app/AppContext';
-import FilterByTemplates from '@/src/DropDowns/FilterByTemplatesDropDown';
+import { useAppContext } from '@/app/AppContext';
+import FilterByTemplates from '@/components/FilterByTemplatesDropDown';
 import { useState } from 'react';
 
 import { IoFilter } from 'react-icons/io5';

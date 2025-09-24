@@ -5,8 +5,8 @@ import { LuWholeWord } from "react-icons/lu";
 import { IoDocumentsOutline } from "react-icons/io5";
 import { IoMdTime } from "react-icons/io";
 import { BiChart } from "react-icons/bi";
-import { useAppContext } from "@/src/app/AppContext";
-import { HistoryData } from "@/src/types/AppType";
+import { useAppContext } from "@/app/AppContext";
+import { HistoryData } from "@/types/AppType";
 
 const DashStats = () => {
   const {

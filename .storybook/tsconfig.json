@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["vite/client", "storybook__react", "node"]
+  },
+  "include": [
+    "../next-env.d.ts",
+    "../src/**/*",
+    "./preview.tsx",
+    "./stories/**/*",
+    "../**/*.stories.ts",
+    "../**/*.stories.tsx"
+  ],
+  "exclude": ["../node_modules", "../.next", "../out", "../dist"]
+}

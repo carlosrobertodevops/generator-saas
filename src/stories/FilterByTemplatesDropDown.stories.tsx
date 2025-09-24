@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import FilterByTemplatesDropDown from './FilterByTemplatesDropDown';
+import FilterByTemplatesDropDown from '../components/FilterByTemplatesDropDown';
 
 const meta: Meta<typeof FilterByTemplatesDropDown> = {
   title: 'Components/FilterByTemplatesDropDown',

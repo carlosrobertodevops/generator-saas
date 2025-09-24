@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import RemainingWords from './RemainingWords';
+import RemainingWords from '../components//RemainingWords';
 
 const meta: Meta<typeof RemainingWords> = {
   title: 'Components/RemainingWords',

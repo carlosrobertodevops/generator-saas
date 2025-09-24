@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import TemplateSingleCard from './TemplateSingleCard';
+import TemplateSingleCard from '../components/TemplateSingleCard';
 
 const meta: Meta<typeof TemplateSingleCard> = {
   title: 'Components/TemplateSingleCard',

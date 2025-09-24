@@ -1,5 +1,5 @@
 "use client";
-import { useAppContext } from "@/src/app/AppContext";
+import { useAppContext } from "@/app/AppContext";
 import React, { useEffect, useState } from "react";
 import { countWords } from "./SingleHistoryItem";
 

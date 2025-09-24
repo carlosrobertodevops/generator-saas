@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import ChartContainer from './Chart';
+import ChartContainer from '../components/Chart';
 
 const meta: Meta<typeof ChartContainer> = {
   title: 'Components/Chart',

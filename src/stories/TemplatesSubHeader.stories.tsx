@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import TemplatesSubHeader from './TemplatesSubHeader';
+import TemplatesSubHeader from '../components/TemplatesSubHeader';
 
 const meta: Meta<typeof TemplatesSubHeader> = {
   title: 'Components/TemplatesSubHeader',

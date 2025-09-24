@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import SingleHistoryItem from './SingleHistoryItem';
+import SingleHistoryItem from '../components/SingleHistoryItem';
 
 const meta: Meta<typeof SingleHistoryItem> = {
   title: 'Components/SingleHistoryItem',

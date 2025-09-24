@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import DashStats from './DashStats';
+import DashStats from '../components/DashStats';
 
 const meta: Meta<typeof DashStats> = {
   title: 'Components/DashStats',

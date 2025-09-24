@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 
 // Importing the useAppContext hook from the AppContext file
-import { useAppContext } from "@/src/app/AppContext";
+import { useAppContext } from "@/app/AppContext";
 
 // MainSection component
-export function MainSection() {
+function MainSection() {
   // Destructuring mainMenuItems and setMainMenuItems from the mainMenuItemsObject in the AppContext
   const {
     mainMenuItemsObject: { mainMenuItems, setMainMenuItems },
@@ -71,4 +71,4 @@ export function MainSection() {
 }
 
 // Exporting the MainSection component
-// export default MainSection;
+export default MainSection;
