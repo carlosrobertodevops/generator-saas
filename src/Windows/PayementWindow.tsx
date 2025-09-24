@@ -1,4 +1,4 @@
-import { useAppContext } from "../app/AppContext";
+import { useAppContext } from "@/app/AppContext";
 import { FaCheck } from "react-icons/fa";
 
 export default function PaymentWindow() {

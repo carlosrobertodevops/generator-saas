@@ -1,9 +1,9 @@
 import MainTopic from "./MainTopic";
 import ToneOrStyle from "./ToneOrStyle";
 import Audience from "./Audience";
-import LanguageSelector from "../../../../components/LanguageSelector";
-import Keywords from "../../../../components/Keywords";
-import { useAppContext } from "@/src/app/AppContext";
+import LanguageSelector from "@/components/LanguageSelector";
+import Keywords from "@/components/Keywords";
+import { useAppContext } from "@/app/AppContext";
 
 export const RenderFormFields = () => {
   const {

@@ -1,4 +1,4 @@
-import { SingleTemplate } from "@/src/types/AppType";
+import { SingleTemplate } from "@/types/AppType";
 import { prompts } from "./prompts";
 import { v4 as uuidv4 } from "uuid";
 
@@ -7,7 +7,7 @@ import ToneOrStyle from "./ToneOrStyle";
 import Audience from "./Audience";
 import LanguageSelector from "../../../../components/LanguageSelector";
 import Keywords from "../../../../components/Keywords";
-import { useAppContext } from "@/src/app/AppContext";
+import { useAppContext } from "@/app/AppContext";
 import { Dispatch, SetStateAction } from "react";
 
 export async function generateContent(

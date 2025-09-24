@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import MainHeader from "../MainHeader";
-import { useAppContext } from "@/src/app/AppContext";
+import { useAppContext } from "@/app/AppContext";
 import DashStats from "../../../components/DashStats";
 import Chart from "../../../components/Chart";
 import ChartContainer from "../../../components/Chart";

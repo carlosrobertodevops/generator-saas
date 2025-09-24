@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Logo from "../../../components/Logo";
-import MainSection from "../../../components/MainSection";
-import OthersSection from "../../../components/OthersSection";
-import RemainingWords from "../../../components/RemainingWords";
-import { useAppContext } from "@/src/app/AppContext";
+import Logo from "@/components/Logo";
+import MainSection from "@/components/MainSection";
+import OthersSection from "@/components/OthersSection";
+import RemainingWords from "@/components/RemainingWords";
+import { useAppContext } from "@/app/AppContext";
 
 function SideBar() {
   //Variables

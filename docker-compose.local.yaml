@@ -1,8 +1,9 @@
 name: generator-saas-local
+
 services:
   web:
     image: node:22-alpine
-    working_dir: /src
+    working_dir: /app
     volumes:
       - ./:/app
       - /app/node_modules
@@ -27,22 +28,25 @@ services:
     image: mongo:7
     restart: unless-stopped
     environment:
+      # Se mudar aqui, o volume PRECISA ser novo
+      MONGODB_URL: ${MONGODB_URL:-mongodb://root:root@mongo:27017/ui-shelf?authSource=admin}
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-root}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-root}
     ports:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
-    # Healthcheck mais tolerante + autenticação explícita
     healthcheck:
-      test: >
-        CMD-SHELL
-        mongosh --norc --quiet "mongodb://root:root@localhost:27017/admin?authSource=admin"
-        --eval "db.adminCommand({ ping: 1 }).ok" | grep -q 1
+      # $$ para escapar $ dentro do compose
+      test:
+        [
+          "CMD-SHELL",
+          "mongosh --norc --quiet 'mongodb://$$MONGO_INITDB_ROOT_USERNAME:$$MONGO_INITDB_ROOT_PASSWORD@127.0.0.1:27017/admin?authSource=admin' --eval 'db.runCommand({ ping: 1 }).ok' | grep -q 1"
+        ]
       interval: 10s
-      timeout: 5s
-      retries: 30
-      start_period: 40s
+      timeout: 10s
+      retries: 40
+      start_period: 90s
 
 volumes:
   mongo-data:

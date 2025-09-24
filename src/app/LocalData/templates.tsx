@@ -15,7 +15,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { RiQuestionAnswerLine } from "react-icons/ri";
 import { BiHeading, BiMessageAltEdit } from "react-icons/bi";
 import { BsTextParagraph } from "react-icons/bs";
-import { SingleTemplate } from "../../types/AppType";
+import { SingleTemplate } from "@/types/AppType";
 
 const iconStyle = "text-[17px] text-purple-600";
 //Stats drop down array

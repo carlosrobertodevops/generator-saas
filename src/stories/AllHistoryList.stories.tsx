@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import AllHistoryList from '../components/AllHistoryList';
+import AllHistoryList from '@/components/AllHistoryList';
 
 const meta: Meta<typeof AllHistoryList> = {
   title: 'Components/AllHistoryList',

@@ -2,8 +2,8 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import LeftSection from "./LeftSection/LeftSection";
 import RightSection from "./RightSection/RightSection";
-import { useAppContext } from "@/src/app/AppContext";
-import { SingleTemplate } from "@/src/types/AppType";
+import { useAppContext } from "@/app/AppContext";
+import { SingleTemplate } from "@/types/AppType";
 
 function ContentGeneratorForm() {
   const {

@@ -1,4 +1,4 @@
-import { useAppContext } from "@/src/app/AppContext";
+import { useAppContext } from "@/app/AppContext";
 import { useContentGeneratorForm } from "./LeftSectionContext";
 useContentGeneratorForm;
 

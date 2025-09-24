@@ -3,7 +3,7 @@ import MainTopic from './MainTopic';
 import ToneOrStyle from './ToneOrStyle';
 import Audience from './Audience';
 import TemplatesHeader from './TemplateHeader';
-import { useAppContext } from '@/src/app/AppContext';
+import { useAppContext } from '@/app/AppContext';
 import { IoClose } from 'react-icons/io5';
 import Keywords from '../../../../components/Keywords';
 import LanguageSelector from '../../../../components/LanguageSelector';

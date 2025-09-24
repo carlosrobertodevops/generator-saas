@@ -1,6 +1,6 @@
 import { MdOutlineTitle } from "react-icons/md";
 import { v4 as uuidv4 } from "uuid";
-import { HistoryData } from "../../types/AppType";
+import { HistoryData } from "@/types/AppType";
 import { resolveValue } from "react-hot-toast";
 
 // Helper function to count words in a string

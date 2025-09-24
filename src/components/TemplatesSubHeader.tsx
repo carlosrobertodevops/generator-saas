@@ -20,8 +20,7 @@ export default function TemplateSubHeader() {
     <div
       className={` rounded-t-lg mx-4  ${
         windowWidth <= 534 ? "h-[180px] p-3" : "h-[130px] p-1"
-      }   flex 
-    items-center justify-center ${
+      }   flex items-center justify-center ${
       isDarkMode
         ? "bg-slate-800 rounded-lg"
         : "bg-slate-100 border rounded-t-lg"
