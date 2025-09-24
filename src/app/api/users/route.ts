@@ -1,7 +1,7 @@
 // pages/api/users.ts
 import { NextApiRequest, NextApiResponse } from "next";
-import connect from "@/src/lib/connect";
-import User from "@/src/app/models/UserSchema";
+import connect from "@/lib/connect";
+import User from "@/app/models/UserSchema";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {

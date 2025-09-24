@@ -1,8 +1,9 @@
 import React from "react";
 
 import MainHeader from "../MainHeader";
-import TemplateSubHeader from "@/app/components/TemplatesSubHeader";
-import TemplateList from "@/app/components/TemplatesList";
+import { TemplateSubHeader }  from "@/components/TemplatesSubHeader";
+
+import { TemplateList } from "@/components/TemplatesList";
 import { useAppContext } from "@/app/AppContext";
 
 function AllTemplatesPage() {
@@ -11,9 +12,7 @@ function AllTemplatesPage() {
   } = useAppContext();
   return (
     <div
-      className={`w-full h-screen flex-1 overflow-y-auto  ${
-        !isDarkMode ? "bg-slate-50" : "bg-slate-700"
-      }`}
+      className={`w-full h-screen flex-1 overflow-y-auto ${ !isDarkMode ? "bg-slate-50" : "bg-slate-700"}`}
     >
       <MainHeader />
       <TemplateSubHeader />

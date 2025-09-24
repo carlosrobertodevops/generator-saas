@@ -1,5 +1,5 @@
-import connect from '@/src/lib/connect';
-import HistoryData from '@/src/app/models/HistorySchema';
+import connect from '@/lib/connect';
+import HistoryData from '@/app/models/HistorySchema';
 import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {

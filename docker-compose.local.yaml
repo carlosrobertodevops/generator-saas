@@ -20,8 +20,9 @@ services:
       PORT: "3000"
       HOSTNAME: "0.0.0.0"
     depends_on:
-      mongo:
-        condition: service_healthy
+      - mongo
+      #mongo:
+        # condition: service_healthy
     restart: unless-stopped
 
   mongo:
@@ -36,17 +37,17 @@ services:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
-    healthcheck:
-      # $$ para escapar $ dentro do compose
-      test:
-        [
-          "CMD-SHELL",
-          "mongosh --norc --quiet 'mongodb://$$MONGO_INITDB_ROOT_USERNAME:$$MONGO_INITDB_ROOT_PASSWORD@127.0.0.1:27017/admin?authSource=admin' --eval 'db.runCommand({ ping: 1 }).ok' | grep -q 1"
-        ]
-      interval: 10s
-      timeout: 10s
-      retries: 40
-      start_period: 90s
+    # healthcheck:
+    #   # $$ para escapar $ dentro do compose
+    #   test:
+    #     [
+    #       "CMD-SHELL",
+    #       "mongosh --norc --quiet 'mongodb://$$MONGO_INITDB_ROOT_USERNAME:$$MONGO_INITDB_ROOT_PASSWORD@127.0.0.1:27017/admin?authSource=admin' --eval 'db.runCommand({ ping: 1 }).ok' | grep -q 1"
+    #     ]
+    #   interval: 10s
+    #   timeout: 10s
+    #   retries: 40
+    #   start_period: 20s
 
 volumes:
   mongo-data:
