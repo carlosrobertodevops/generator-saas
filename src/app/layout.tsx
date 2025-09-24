@@ -10,15 +10,17 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["100","200","300","400","500","600","700","800","900"],
 });
 
 export const metadata: Metadata = {
@@ -28,16 +30,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <ClerkProvider>
-        <AppContextProvider>
-          <body className={poppins.variable}>{children}</body>
-        </AppContextProvider>
-      </ClerkProvider>
+      <body
+        className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ClerkProvider>
+          <AppContextProvider>{children}</AppContextProvider>
+        </ClerkProvider>
+      </body>
     </html>
   );
 }
